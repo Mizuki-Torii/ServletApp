@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>利用者メニュー</title>
 </head>
 <body>
-
+	<h1>利用者メニュー</h1>
 </body>
 </html>
