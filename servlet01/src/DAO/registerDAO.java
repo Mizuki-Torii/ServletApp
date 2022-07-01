@@ -24,6 +24,7 @@ public class registerDAO {
 				pstmt.setString( 4, account.getMail() );
 				pstmt.setInt( 5, account.getAge() );
 				pstmt.setInt( 6, account.getTel() );
+				System.out.println("ron");
 
 				f = pstmt.executeUpdate();
 
