@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.selectDAO;
 import scopedata.Account;
 
-
 @WebServlet("/list_display")
 public class list_display extends HttpServlet {
 	private static final long serialVersionUID = 1L;

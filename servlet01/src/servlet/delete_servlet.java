@@ -14,7 +14,6 @@ import DAO.deleteDAO;
 import DAO.selectDAO;
 import scopedata.Account;
 
-
 @WebServlet("/delete_servlet")
 public class delete_servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
