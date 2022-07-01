@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.selectDAO;
-
 
 @WebServlet("/topmenu")
 public class topmenu extends HttpServlet {
@@ -21,15 +19,15 @@ public class topmenu extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String action = request.getParameter("action");
 
-			if( !action.equals("go")) {
-				selectDAO f = new selectDAO();
-				path = "WEB-INF/jsp/u_login.jsp";
-			}else{
-				path = "WEB-INF/jsp/a_login.jsp";
-			}
+//			if( !action.equals("go")) {
+//				selectDAO f = new selectDAO();
+//				path = "WEB-INF/jsp/u_login.jsp";
+//			}else{
+//				path = "WEB-INF/jsp/a_login.jsp";
+//			}
 
-	RequestDispatcher dispatcher =
-			request.getRequestDispatcher( path );
-	dispatcher.forward( request , response );
+			RequestDispatcher dispatcher =
+					request.getRequestDispatcher( path);
+			dispatcher.forward( request , response );
 	}
 }
