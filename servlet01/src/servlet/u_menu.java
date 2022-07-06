@@ -23,5 +23,4 @@ public class u_menu extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
-
 }

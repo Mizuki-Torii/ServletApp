@@ -13,7 +13,7 @@
 	<a href="/servlet/u_search">企業検索</a>
 	<a href="/servlet/u_co_list">企業一覧</a><br>
 
-	<a href="/servlet/u_login">ログアウト</a>
+	<a href="/servlet/LoginServlet">ログアウト</a>
 
 </body>
 </html>
