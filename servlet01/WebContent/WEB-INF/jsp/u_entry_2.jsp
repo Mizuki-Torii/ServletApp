@@ -11,13 +11,13 @@
 
 
 	ログインID(必須) &emsp;:<input type="text" name="id" required><br>
-    パスワード(必須) &emsp;:<input type="text" name="pass" required><br>
+    パスワード(必須) &emsp;:<input type="password" name="pass" required><br>
     名前(必須) &emsp;:<input type="text" name="name" required><br>
     メール(必須) &emsp;:<input type="text" name="mail" required><br>
     年齢(必須) &emsp;:<input type="text" name="age" required><br>
     電話番号(必須) &emsp;:<input type="text" name="tel" required><br>
 
-    <a href="/servlet01/u_login?value=戻る">戻る</a>
+    <a href="/servlet01/u_entry_1?value=戻る">戻る</a>
 	<a href="/servlet01/u_entry_3?value=登録">登録</a>
 
 </body>
