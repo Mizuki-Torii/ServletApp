@@ -19,8 +19,8 @@
     年齢(必須) &emsp;:<input type="text" name="age" required><br>
     電話番号(必須) &emsp;:<input type="text" name="tel" required><br>
 
-    <a href="/Servlet01/WelcomeServlet">戻る</a>
-	<a href="/Servlet01/RegisterUser?action=go">登録</a>
+    <a href="/Login/WelcomeServlet">戻る</a>
+	<a href="/Login/RegisterUser?action=go">登録</a>
 
     </form>
 </body>
