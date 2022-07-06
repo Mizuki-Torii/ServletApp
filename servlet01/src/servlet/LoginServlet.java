@@ -25,6 +25,8 @@ public class LoginServlet extends HttpServlet {
 //		Login login = new  Login(id , pass);
 //		session.setAttribute("login",login);
 
+
+
 //
 //		LoginLogic lo = new LoginLogic();
 //		boolean r = lo.execute(login);
