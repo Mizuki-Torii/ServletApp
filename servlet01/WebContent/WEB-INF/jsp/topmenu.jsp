@@ -10,6 +10,8 @@
 	<h1>2023年度 企業情報サーチ</h1>
 	<br>
 	<input type="submit" value="23年卒 就職活動者はコチラ" >
+	<br>
+	<input type="submit" value="管理者ページ" >
 
 </body>
 </html>
