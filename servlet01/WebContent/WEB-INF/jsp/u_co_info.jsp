@@ -10,7 +10,7 @@
 	<p>ログイン {{ name }} </p>
 	<h1>企業詳細情報</h1><br>
 
-	<a href="/servlet/u_search">企業検索に戻りへ</a>
-	<a href="/servlet/LoginServlet">ログアウト</a>
+	<a href="/servlet01/u_search?action=戻る">企業検索に戻りへ</a>
+	<a href="/servlet01/u_login?action=ログアウト">ログアウト</a>
 </body>
 </html>
