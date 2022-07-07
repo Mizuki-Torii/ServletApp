@@ -7,6 +7,13 @@
 <title>利用者メニュー</title>
 </head>
 <body>
-	<h1>利用者メニュー</h1>
+	<p>ログイン: {{ name }} <p>
+	<a href="/servlet/u_setting1.jsp">アクアウント設計</a><br>
+	<h1>利用者メニュー</h1><br>
+	<a href="/servlet/u_search">企業検索</a>
+	<a href="/servlet/u_co_list">企業一覧</a><br>
+
+	<a href="/servlet/LoginServlet">ログアウト</a>
+
 </body>
 </html>
