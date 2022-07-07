@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import DAO.selectDAO;
+import scopedata.Account;
+
 
 @WebServlet("/u_menu")
 public class u_menu extends HttpServlet {
@@ -16,10 +19,23 @@ public class u_menu extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path = null;
 		request.setCharacterEncoding("UTF-8");
-		String action = request.getParameter("action");
+		String value = request.getParameter("value");
+
+		selectDAO f = new selectDAO();
+		Account account = f.find( value );
+
+		if( value.equals("企業検索")) {
+			path = "WEB-INF/jsp/u_search.jsp";
+		}else if(value.equals("企業一覧")) {
+			path = "WEB-INF/jsp/u_co_list.jsp";
+		}else if(value.equals("アカウント設定")) {
+			path = "WEB-INF/jsp/u_setting_1.jsp";
+		}else if(value.equals("ログアウト")) {
+			path = "WEB-INF/jsp/u_login.jsp";
+		}
 
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/u_menu.jsp");
+				request.getRequestDispatcher( path );
 		dispatcher.forward(request, response);
 	}
 
