@@ -10,6 +10,7 @@
 	<h1>2023年度 企業情報サーチ</h1>
 	<br>
 
+
 	<form action="/servlet01/topmenu" method="post">
 	<input type="hidden" name="value" value="u_login">
 	<input type="submit" value="23年卒 就職活動者はコチラ" >
