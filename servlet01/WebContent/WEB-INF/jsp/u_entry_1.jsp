@@ -18,8 +18,13 @@
     年齢(必須) &emsp;:<input type="text" name="age" required><br>
     電話番号(必須) &emsp;:<input type="text" name="tel" required><br>
 
+<<<<<<< HEAD
     <a href="/servlet01/u_login?value=戻る">戻る</a>
 	<a href="/servlet01/u_emtry_2?value=登録">登録</a>
+=======
+    <a href="/Login/WelcomeServlet">戻る</a>
+	<a href="/Login/RegisterUser?action=go">登録</a>
+>>>>>>> branch 'master' of https://github.com/Mizuki-Torii/ServletApp.git
 
 </body>
 </html>
