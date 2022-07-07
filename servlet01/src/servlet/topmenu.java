@@ -24,10 +24,11 @@ public class topmenu extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
+
 		if( value.equals("u_login"))
 			path = "WEB-INF/jsp/u_login.jsp";
 		else if( value.equals("a_login"))
-			path = "WEB-INF/jsp/u_login.jsp";
+			path = "WEB-INF/jsp/a_login.jsp";
 
 
 		RequestDispatcher dispatcher =
