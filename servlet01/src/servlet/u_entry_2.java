@@ -26,10 +26,10 @@ public class u_entry_2 extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-			if( value.equals("登録")) {
+			if( value.equals("u_entry_3")) {
 				selectDAO f = new selectDAO();
 				path = "WEB-INF/jsp/u_entry_3.jsp";
-			}else if( value.equals("戻る")){
+			}else if( value.equals("u_entry_1")){
 				path = "WEB-INF/jsp/u_entry_1.jsp";
 			}
 

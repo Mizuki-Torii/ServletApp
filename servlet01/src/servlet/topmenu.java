@@ -25,17 +25,12 @@ public class topmenu extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-			value = "23年卒就職活動者はコチラ";
-			if( value.equals("23年卒就職活動者はコチラ")) {
-				path = "WEB-INF/jsp/u_login.jsp";
-			}else if( value.equals("管理者ページ")){
-				path = "WEB-INF/jsp/u_login.jsp";
-			}
 
-			if( value.equals("u_login"))
+			if( value.equals("u_login")) {
 				path = "WEB-INF/jsp/u_login.jsp";
-			else if( value.equals("a_login"))
+			}else if( value.equals("a_login")){
 				path = "WEB-INF/jsp/a_login.jsp";
+			}
 
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher( path );

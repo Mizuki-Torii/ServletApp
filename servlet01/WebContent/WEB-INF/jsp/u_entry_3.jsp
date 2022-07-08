@@ -10,8 +10,8 @@
 	<h2>登録完了</h2>
 	<p>ご登録いただきありがとうございます。</p>
 
-	<a href="/servlet01/u_login?value=ログイン">ログイン</a>
-	<a href="/servlet01/topmenu?value=登録">トップへ</a>
+	<a href="/servlet01/u_login?value=u_login">ログイン</a>
+	<a href="/servlet01/topmenu?value=topmenu">トップへ</a>
 
 </body>
 </html>
