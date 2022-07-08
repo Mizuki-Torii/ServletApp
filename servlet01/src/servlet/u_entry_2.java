@@ -9,17 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import DAO.selectDAO;
 
-@WebServlet("/topmenu")
-public class topmenu extends HttpServlet {
+
+@WebServlet("/u_entry_2")
+public class u_entry_2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher =
-
-				request.getRequestDispatcher( "WEB-INF/jsp/topmenu.jsp" );
-
-				request.getRequestDispatcher( "WEB-INF/jsp/topmenu.jsp");
+				request.getRequestDispatcher( "WEB-INF/jsp/u_entry_2.jsp" );
 		dispatcher.forward( request , response );
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,16 +26,16 @@ public class topmenu extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-
-			value = "23年卒就職活動者はコチラ";
-			if( value.equals("23年卒就職活動者はコチラ")) {
-				path = "WEB-INF/jsp/u_login.jsp";
-			}else if( value.equals("管理者ページ")){
-				path = "WEB-INF/jsp/u_login.jsp";
+			if( value.equals("登録")) {
+				selectDAO f = new selectDAO();
+				path = "WEB-INF/jsp/u_entry_3.jsp";
+			}else if( value.equals("戻る")){
+				path = "WEB-INF/jsp/u_entry_1.jsp";
 			}
 
-			RequestDispatcher dispatcher =
-					request.getRequestDispatcher( path );
-			dispatcher.forward( request , response );
+	RequestDispatcher dispatcher =
+			request.getRequestDispatcher( path );
+	dispatcher.forward( request , response );
 	}
 }
+
