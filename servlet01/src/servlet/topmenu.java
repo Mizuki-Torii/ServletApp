@@ -17,10 +17,7 @@ public class topmenu extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher =
 
-				request.getRequestDispatcher( "WEB-INF/jsp/topmenu.jsp" );
-
-				request.getRequestDispatcher( "WEB-INF/jsp/topmenu.jsp");
-
+		request.getRequestDispatcher( "WEB-INF/jsp/topmenu.jsp");
 		dispatcher.forward( request , response );
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,8 +32,13 @@ public class topmenu extends HttpServlet {
 				path = "WEB-INF/jsp/u_login.jsp";
 			}
 
-			RequestDispatcher dispatcher =
-					request.getRequestDispatcher( path );
-			dispatcher.forward( request , response );
+			if( value.equals("u_login"))
+				path = "WEB-INF/jsp/u_login.jsp";
+			else if( value.equals("a_login"))
+				path = "WEB-INF/jsp/a_login.jsp";
+
+		RequestDispatcher dispatcher =
+				request.getRequestDispatcher( path );
+		dispatcher.forward( request , response );
 	}
 }
