@@ -29,9 +29,9 @@ public class u_entry_1 extends HttpServlet {
 		selectDAO f = new selectDAO();
 		Account account = f.find( value );
 
-		if( value.equals("登録")) {
+		if( value.equals("u_entry_2")) {
 			path = "WEB-INF/jsp/u_entry_2.jsp";
-		}else if(value.equals("戻る")) {
+		}else if(value.equals("u_login")) {
 			path = "WEB-INF/jsp/u_login.jsp";
 		}
 	RequestDispatcher dispatcher =

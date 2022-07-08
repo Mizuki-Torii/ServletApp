@@ -18,13 +18,13 @@
     年齢(必須) &emsp;:<input type="text" name="age" required><br>
     電話番号(必須) &emsp;:<input type="text" name="tel" required><br>
 
- 	<form action="/servlet01/servlet/u_login.java">
-		<input type="hidden" name="value">
+ 	<form action="/servlet01/u_login" method="post">
+		<input type="hidden" name="u_login">
 		<input type="submit" value="戻る" >
 	</form>
-	<form action="/servlet01/servlet/u_emtry_2.java">
-		<input type="hidden" name="value">
-		<input type="submit" value="変更" >
+	<form action="/servlet01/u_entry_2" method="post">
+		<input type="hidden" name="u_entry">
+		<input type="submit" value="登録" >
 	</form>
 
 </body>
