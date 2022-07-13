@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ユーザ登録画面</title>
+<title>登録画面</title>
 </head>
 <body>
-	<h3>ユーザ登録画面</h3>
+	<h3>登録画面</h3>
 	<p>※すべて必須項目です。正しく入力してください。<br>
 	※ログインID、パスワード、メールアドレス、電話番号は半角英数字で入力してください。<br>
 	</p>
@@ -24,7 +24,7 @@
 	</form>
 	<form action="/servlet01/u_entry_2">
 		<input type="hidden" name="u_entry_2">
-		<input type="submit" value="登録" >
+		<input type="submit" value="確認" >
 	</form>
 
 </body>
