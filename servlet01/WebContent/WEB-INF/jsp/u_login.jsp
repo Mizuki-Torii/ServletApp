@@ -15,6 +15,6 @@
 		<input type="submit" value="ログイン">
 	</form>
 	<a href="/servlet01/topmenu">戻る</a>
-	<a href="/servlet01/Register?action=go">新規登録</a>
+	<a href="/servlet01/u_entry_1?action=go">新規登録</a>
 </body>
 </html>
