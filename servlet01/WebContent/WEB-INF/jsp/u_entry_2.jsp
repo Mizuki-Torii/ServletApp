@@ -18,8 +18,8 @@
     電話番号(必須) &emsp;:<input type="text" name="tel" required><br>
 
 
-	<form action="/servlet01/u_entry_2">
-		<input type="hidden" name="u_entry_2">
+	<form action="/servlet01/u_entry_1">
+		<input type="hidden" name="u_entry_1">
 		<input type="submit" value="戻る" >
 	</form>
 	<form action="/servlet01/u_entry_3">

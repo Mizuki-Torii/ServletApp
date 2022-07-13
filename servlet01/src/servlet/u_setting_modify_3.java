@@ -26,9 +26,9 @@ public class u_setting_modify_3 extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-			if( value.equals("u_login")) {
+			if( value.equals("u_menu")) {
 				selectDAO f = new selectDAO();
-				path = "WEB-INF/jsp/u_login.jsp";
+				path = "WEB-INF/jsp/u_menu.jsp";
 
 	RequestDispatcher dispatcher =
 			request.getRequestDispatcher( path );
