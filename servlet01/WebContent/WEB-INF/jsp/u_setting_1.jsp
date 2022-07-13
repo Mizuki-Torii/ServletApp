@@ -7,23 +7,24 @@
 <title>アカウント設定</title>
 </head>
 <body>
-	<form>
-		<h2>アカウント設定</h2>
+	<h2>アカウント設定</h2>
 
-		<p>ログインID</p>
-		<p>パスワード</p>
-		<p>名前</p>
-		<p>メール</p>
-		<p>年齢</p>
-		<p>電話番号</p>
+	<p>ログインID</p>
+	<p>パスワード</p>
+	<p>名前</p>
+	<p>メール</p>
+	<p>年齢</p>
+	<p>電話番号</p>
 
 
-		<!-- 一覧表示 -->
+	<!-- 一覧表示 -->
 
+	<a href="/servlet01/u_menu?value=u_menu">戻る</a>
+
+	<form action="/servlet01/u_setting_modify_1">
+		<input type="hidden" name="u_setting_modify_1">
+		<input type="submit" value="変更">
 	</form>
-	<a href="/servlet01/u_setting_modify_1?value=戻る">戻る</a>
-	<a href="/servlet01/u_entry_2?value=変更">変更</a>
-
 
 </body>
 </html>
