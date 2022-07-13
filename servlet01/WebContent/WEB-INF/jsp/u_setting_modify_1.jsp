@@ -8,7 +8,7 @@
 </head>
 <body>
 	<p>ログイン:</p>
-	<form>
+
 		<h2>情報修正</h2>
 		ログインID    <input type="text" value="ログインID">
 		パスワード    <input type="password" value="パスワード">
@@ -18,13 +18,14 @@
 		電話番号    <input type="text" value="電話番号">
 
 	<!-- 一覧表示 -->
+
+	<form action="/servlet01/u_setting_modify_1">
+		<input type="hidden" name="u_setting_modify_1">
+		<input type="submit" value="戻る" >
 	</form>
 
-	<form action="/servlet01/servlet/u_setting_modify_1.java">
-		<input type="hidden" name="value">
-		<input type="submit" value="戻る" >
-	<br>
-		<input type="hidden" name="value">
+	<form action="/servlet01/u_setting_modify_2">
+		<input type="hidden" name="u_setting_modify_2">
 		<input type="submit" value="変更" >
 	</form>
 
