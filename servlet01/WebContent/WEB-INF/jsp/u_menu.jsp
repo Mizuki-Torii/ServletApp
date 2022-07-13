@@ -7,13 +7,16 @@
 <title>利用者メニュー</title>
 </head>
 <body>
-	<p>ログイン: {{ name }} <p>
-	<a href="/servlet/u_setting1.jsp">アクアウント設計</a><br>
-	<h1>利用者メニュー</h1><br>
-	<a href="/servlet/u_search">企業検索</a>
-	<a href="/servlet/u_co_list">企業一覧</a><br>
+	<p>ログイン：{{name}}
+	<a href="/servlet01/u_setting_1?value=設計">アカウント設計</a><br>
+	<h1>利用者メニュー</h1><br><br>
 
-	<a href="/servlet/LoginServlet">ログアウト</a>
+	<form action="/servlet01/u_search" methods="post">
+		<input type="submit" value="検索">
+	</form>
 
+	<form action="/servlet01/u_co_list" methods="post">
+		<input type="submit" value="一覧">
+	</form>
 </body>
 </html>

@@ -27,6 +27,16 @@
     <a href="/Login/WelcomeServlet">戻る</a>
 	<a href="/Login/RegisterUser?action=go">登録</a>
 
+ 	<form action="/servlet01/u_login" method="post">
+		<input type="hidden" name="u_login">
+		<input type="submit" value="戻る" >
+	</form>
+	<form action="/servlet01/u_entry_2" method="post">
+		<input type="hidden" name="u_entry">
+		<input type="submit" value="登録" >
+	</form>
+
+
 
 </body>
 </html>

@@ -11,16 +11,13 @@
 	<br>
 
 	<form action="/servlet01/servlet/topmenu.java">
-	<input type="hidden" name="value">
-	<input type="submit" value="23年卒 就職活動者はコチラ" >
-	<br>
-	<input type="hidden" name="value">
-	<input type="submit" value="管理者ページ" >
-	</form>
-
+		<input type="hidden" name="value">
+		<input type="submit" value="23年卒 就職活動者はコチラ" >
 
 	<form action="/servlet01/topmenu" method="post">
-	<input type="submit" value="23年卒就職活動者はコチラ">
-	</form>
+
+	<input type="hidden" name="value" value="a_login">
+	<input type="submit" value="管理者ページ" >
+
 </body>
 </html>
