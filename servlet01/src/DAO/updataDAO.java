@@ -14,7 +14,7 @@ public class updataDAO {
 		try {
 			Class.forName("org.h2.Driver");
 			 con = DriverManager.getConnection(
-						"jdbc:h2:tcp://localhost/~/test", "sa", "mizuki0628");
+						"jdbc:h2:tcp://localhost/~/test", "sa", "longh2132109");
 
 				String sql = "delete from account where id = ?";
 

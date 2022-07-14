@@ -43,7 +43,7 @@ public class u_login extends HttpServlet {
 //			path = "WEB-INF/jsp/loginErr.jsp";
 //		}
 //		RequestDispatcher dispatcher =
-//				request.getRequestDispatcher();
+//				request.getRequestDispatcher(path);
 //		dispatcher.forward(request,response);
 	}
 
