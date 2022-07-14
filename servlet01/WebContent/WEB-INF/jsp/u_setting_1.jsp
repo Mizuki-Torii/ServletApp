@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import ="scopedata.Account " %>
+<%
+	Account account = (Account)session.getAttribute("LoginUser");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +13,14 @@
 <body>
 	<h2>アカウント設定</h2>
 
-	<p>ログインID</p>
-	<p>パスワード</p>
-	<p>名前</p>
-	<p>メール</p>
-	<p>年齢</p>
-	<p>電話番号</p>
+	ログインID(必須) :<%= account.getId() %><br>
+    パスワード(必須) :<%= account.getPass() %><br>
+    名前(必須):<%= account.getName() %><br>
+    メール(必須) :<%= account.getMail() %><br>
+    年齢(必須) :<%= account.getAge() %><br>
+    電話番号(必須) :<%= account.getTel() %> <br>
 
 
-	<!-- 一覧表示 -->
 
 	<a href="/servlet01/u_menu?value=u_menu">戻る</a>
 

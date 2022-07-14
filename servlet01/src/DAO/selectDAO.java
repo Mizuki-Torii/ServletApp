@@ -17,7 +17,7 @@ public class selectDAO {
 		try {
 			Class.forName("org.h2.Driver");
 			 con = DriverManager.getConnection(
-						"jdbc:h2:tcp://localhost/~/test", "sa", "mizuki0628");
+						"jdbc:h2:tcp://localhost/~/test", "sa", "longh2132109e");
 				String sql = "select * from account order by id asc";
 
 				PreparedStatement pstmt = con.prepareStatement(sql);

@@ -12,7 +12,7 @@ public class deleteDAO {
 		try {
 			Class.forName("org.h2.Driver");
 			 con = DriverManager.getConnection(
-						"jdbc:h2:tcp://localhost/~/test", "sa", "mizuki0628");
+						"jdbc:h2:tcp://localhost/~/test", "sa", "longh2132109e");
 				String sql = "delete from account where id = ?";
 
 				PreparedStatement pstmt = con.prepareStatement(sql);
