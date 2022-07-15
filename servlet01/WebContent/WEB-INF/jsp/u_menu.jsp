@@ -11,7 +11,7 @@
 <title>利用者メニュー</title>
 </head>
 <body>
-	<p>ログイン：<%= account.getID() %>
+	<p>ログイン：</p>
 	<a href="/servlet01/u_setting_1?value=u_setting_1">アカウント設定</a>
 	<h1>利用者メニュー</h1><br><br>
 

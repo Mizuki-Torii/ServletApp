@@ -22,11 +22,11 @@
 
 
 	<form action="/servlet01/u_entry_2" method="post">
-		<input type="hidden" name="u_entry_1">
+		<input type="hidden" name="value" value="u_entry_1" >
 		<input type="submit" value="戻る" >
 	</form>
 	<form action="/servlet01/u_entry_2" method="post">
-		<input type="hidden" name="u_entry_3">
+		<input type="hidden" name="value" value="u_entry_3" >
 		<input type="submit" value="登録" >
 	</form>
 

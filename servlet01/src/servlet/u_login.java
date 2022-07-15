@@ -33,18 +33,17 @@ public class u_login extends HttpServlet {
 		session.setAttribute("login",login);
 
 
-
-//
+		String r = "true";
 //		LoginLogic lo = new LoginLogic();
 //		boolean r = lo.execute(login);
-//		if( r == true) {	// login チェック
-//			path = "WEB-INF/jsp/loginOk.jsp";
-//		}else {
-//			path = "WEB-INF/jsp/loginErr.jsp";
-//		}
-//		RequestDispatcher dispatcher =
-//				request.getRequestDispatcher(path);
-//		dispatcher.forward(request,response);
+		if( r == "true") {	// login チェック
+			path = "WEB-INF/jsp/u_menu.jsp";
+		}else {
+			path = "WEB-INF/jsp/loginErr.jsp";
+		}
+		RequestDispatcher dispatcher =
+				request.getRequestDispatcher(path);
+		dispatcher.forward(request,response);
 	}
 
 }
