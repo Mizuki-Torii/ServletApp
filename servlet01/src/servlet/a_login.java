@@ -31,6 +31,18 @@ public class a_login extends HttpServlet {
 		HttpSession session = request.getSession();
 		Login login = new  Login(id , pass);
 		session.setAttribute("login",login);
+
+		String r = "true";
+//		LoginLogic lo = new LoginLogic();
+//		boolean r = lo.execute(login);
+		if( r == "true") {	// login チェック
+			path = "WEB-INF/jsp/a_co_list.jsp";
+		}else {
+			path = "WEB-INF/jsp/loginErr.jsp";
+		}
+		RequestDispatcher dispatcher =
+				request.getRequestDispatcher(path);
+		dispatcher.forward(request,response);
 	}
 }
 

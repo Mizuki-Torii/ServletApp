@@ -40,7 +40,7 @@ public class u_entry_1 extends HttpServlet {
 		String name = request.getParameter("name");
 		String mail = request.getParameter("mail");
 		int age = Integer.parseInt(request.getParameter("age"));
-		int tel = Integer.parseInt(request.getParameter("tel"));
+		String tel = request.getParameter("tel");
 		HttpSession session = request.getSession();
 		Account account = new Account( id , pass, name, mail, age, tel );
 		session.setAttribute("LoginUser", account);

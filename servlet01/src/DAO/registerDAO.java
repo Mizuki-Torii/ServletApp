@@ -23,7 +23,7 @@ public class registerDAO {
 				pstmt.setString( 3, account.getName() );
 				pstmt.setString( 4, account.getMail() );
 				pstmt.setInt( 5, account.getAge() );
-				pstmt.setInt( 6, account.getTel() );
+				pstmt.setString( 6, account.getTel() );
 
 				f = pstmt.executeUpdate();
 

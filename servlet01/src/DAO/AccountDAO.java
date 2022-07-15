@@ -29,7 +29,7 @@ public class AccountDAO {
 			String name = rs.getString("name");
 			String mail = rs.getString("mail");
 			int age = rs.getInt("age");
-			int tel = rs.getInt("tel");
+			String tel = rs.getString("tel");
 			account = new Account( id , pass , name , mail , age , tel);
 
 		}catch( Exception e) {
