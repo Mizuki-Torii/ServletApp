@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>利用者ログイン</h1>
-	<form action="/servlet01/LoginServlet" method="post">
+	<form action="/servlet01/u_login" method="post">
 		ログインID：<input type="text" name="id"><br>
 		パスワード：<input type="password" name="pass"><br>
 		<input type="submit" value="ログイン">
