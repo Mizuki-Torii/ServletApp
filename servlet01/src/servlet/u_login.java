@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.LoginLogic;
 import scopedata.Login;
 
 @WebServlet("/u_login")
@@ -33,10 +34,10 @@ public class u_login extends HttpServlet {
 		session.setAttribute("login",login);
 
 
-		String r = "true";
-//		LoginLogic lo = new LoginLogic();
-//		boolean r = lo.execute(login);
-		if( r == "true") {	// login チェック
+
+		LoginLogic lo = new LoginLogic();
+		boolean r = lo.execute(login);
+		if( r == true) {	// login チェック
 			path = "WEB-INF/jsp/u_menu.jsp";
 		}else {
 			path = "WEB-INF/jsp/loginErr.jsp";
