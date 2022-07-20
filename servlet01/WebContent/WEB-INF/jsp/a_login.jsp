@@ -12,6 +12,7 @@
 	<form action="/servlet01/a_login" method="post">
 		ログインID：<input type="text" name="id"><br>
 		パスワード：<input type="password" name="pass"><br>
+		<input type="hidden" name="value" value="a_co_list">
 		<input type="submit" value="ログイン">
 	</form>
 	<a href="/servlet01/topmenu">戻る</a>
