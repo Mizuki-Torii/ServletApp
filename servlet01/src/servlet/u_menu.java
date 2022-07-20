@@ -25,13 +25,13 @@ public class u_menu extends HttpServlet {
 			request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-		if( value.equals("企業検索")) {
+		if( value.equals("u_search")) {
 			path = "WEB-INF/jsp/u_search.jsp";
-		}else if(value.equals("企業一覧")) {
+		}else if(value.equals("u_co_list")) {
 			path = "WEB-INF/jsp/u_co_list.jsp";
-		}else if(value.equals("アカウント設定")) {
+		}else if(value.equals("u_setting_1")) {
 			path = "WEB-INF/jsp/u_setting_1.jsp";
-		}else if(value.equals("ログアウト")) {
+		}else if(value.equals("u_login")) {
 			path = "WEB-INF/jsp/u_login.jsp";
 		}
 

@@ -25,9 +25,9 @@ public class u_search extends HttpServlet {
 		String value = request.getParameter("value");
 
 		if( value.equals("条件なしで一覧表示")) {
-			path = "WEB-INF/jsp/u_co_list.jsp";
+			path = "WEB-INF/jsp/a_co_list.jsp";
 		} else if (value.equals("検索")) {
-			path = "WEB=INF/jsp/u_search.jsp";
+			path = "WEB-INF/jsp/u_search.jsp";
 		}
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher(path);

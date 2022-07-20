@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import DAO.selectDAO;
 import scopedata.Account;
@@ -23,16 +24,28 @@ public class u_setting_1 extends HttpServlet {
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException {
 		String path = null;
+
 		request.setCharacterEncoding("UTF-8");
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+		String name = request.getParameter("name");
+		String mail = request.getParameter("mail");
+		int age = Integer.parseInt(request.getParameter("age"));
+		String tel = request.getParameter("tel");
+
+		HttpSession session = request.getSession();
+		Account account = new Account( id , pass, name, mail, age, tel );
+		session.setAttribute("LoginUser", account);
+
 		String value = request.getParameter("value");
 
 		selectDAO f = new selectDAO();
-		Account account = f.find( value );
+		Account account1 = f.find( value );
 
-		if( value.equals("変更")) {
-			path = "WEB-INF/jsp/u_entry_2.jsp";
-		}else if(value.equals("戻る")) {
-			path = "u_setting_modify_1.jsp";
+		if( value.equals("u_setting_modify_1")) {
+			path = "WEB-INF/jsp/u_setting_modify_1.jsp";
+		}else if(value.equals("u_menu")) {
+			path = "u_menu.jsp";
 		}
 	RequestDispatcher dispatcher =
 			request.getRequestDispatcher( path );

@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import DAO.selectDAO;
 
 
-@WebServlet("/u_setting_modify_3")
-public class u_setting_modify_3 extends HttpServlet {
+@WebServlet("/u_setting_modify_2")
+public class u_setting_modify_2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher( "WEB-INF/jsp/u_setting_modify_3.jsp" );
+				request.getRequestDispatcher( "WEB-INF/jsp/u_setting_modify_2.jsp" );
 		dispatcher.forward( request , response );
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,13 +26,15 @@ public class u_setting_modify_3 extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String value = request.getParameter("value");
 
-			if( value.equals("u_menu")) {
+			if( value.equals("u_setting_modify_1")) {
 				selectDAO f = new selectDAO();
-				path = "WEB-INF/jsp/u_menu.jsp";
+				path = "WEB-INF/jsp/u_setting_modify_1.jsp";
+			}else if( value.equals("u_setting_modify_3")){
+				path = "WEB-INF/jsp/u_setting_modify_3.jsp";
+			}
 
 	RequestDispatcher dispatcher =
 			request.getRequestDispatcher( path );
 	dispatcher.forward( request , response );
-		}
 	}
 }

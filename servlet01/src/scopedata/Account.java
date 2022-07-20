@@ -8,9 +8,9 @@ public class Account implements Serializable {
 	public String mail;
 	public String name;
 	public int age;
-	public int tel;
+	public String tel;
 	public Account( String _id, String _pass, String _name,
-			String _mail, int _age, int _tel ) {
+			String _mail, int _age, String _tel ) {
 		id = _id; pass = _pass; name = _name; mail = _mail; age = _age; tel = _tel;
 	}
 	public void  setId( String  _id ) {
@@ -28,7 +28,7 @@ public class Account implements Serializable {
     public void setAge( int _age ) {
     	age = _age;
     }
-    public void setTel( int _tel ) {
+    public void setTel( String _tel ) {
     	tel = _tel;
     }
 	public String getId() { return id; }
@@ -36,5 +36,5 @@ public class Account implements Serializable {
 	public String getName() { return name; }
 	public String getMail() { return mail; }
 	public int getAge() { return age; }
-	public int getTel() { return tel; }
+	public String getTel() { return tel; }
 }

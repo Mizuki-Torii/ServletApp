@@ -17,10 +17,9 @@
 		年齢    <input type="text" value="年齢">
 		電話番号    <input type="text" value="電話番号">
 
-	<!-- 一覧表示 -->
 
-	<form action="/servlet01/u_setting_modify_1">
-		<input type="hidden" name="u_setting_modify_1">
+	<form action="/servlet01/u_setting_1">
+		<input type="hidden" name="u_setting_1">
 		<input type="submit" value="戻る" >
 	</form>
 

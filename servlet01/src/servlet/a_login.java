@@ -10,17 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import model.LoginLogic;
 import scopedata.Login;
 
-@WebServlet("/u_login")
-public class u_login extends HttpServlet {
+@WebServlet("/a_login")
+public class a_login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		RequestDispatcher dispatcher =
 
-				request.getRequestDispatcher( "WEB-INF/jsp/u_login.jsp");
+				request.getRequestDispatcher( "WEB-INF/jsp/a_login.jsp");
 				dispatcher.forward( request , response );
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -33,12 +32,11 @@ public class u_login extends HttpServlet {
 		Login login = new  Login(id , pass);
 		session.setAttribute("login",login);
 
-
-
-		LoginLogic lo = new LoginLogic();
-		boolean r = lo.execute(login);
-		if( r == true) {	// login チェック
-			path = "WEB-INF/jsp/u_menu.jsp";
+		String r = "true";
+//		LoginLogic lo = new LoginLogic();
+//		boolean r = lo.execute(login);
+		if( r == "true") {	// login チェック
+			path = "WEB-INF/jsp/a_co_list.jsp";
 		}else {
 			path = "WEB-INF/jsp/loginErr.jsp";
 		}
@@ -46,5 +44,5 @@ public class u_login extends HttpServlet {
 				request.getRequestDispatcher(path);
 		dispatcher.forward(request,response);
 	}
-
 }
+

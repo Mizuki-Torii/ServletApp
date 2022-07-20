@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import ="scopedata.Account " %>
+<%
+	Account account = (Account)session.getAttribute("LoginUser");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,18 +11,31 @@
 <title>利用者メニュー</title>
 </head>
 <body>
-	<p>ログイン：{{name}}
-	<a href="/servlet01/u_setting_1?value=設計">アカウント設計</a><br>
+	<p>ログイン：</p>
+	<a href="/servlet01/u_setting_1?value=u_setting_1">アカウント設定</a>
 	<h1>利用者メニュー</h1><br><br>
 
+<<<<<<< HEAD
 	<form action="/servlet01/u_menu" methods="post">
 		<input type="submit" name="value" value="u_search">
 		<input type="submit" value="企業検索">
+
+	<form action="/servlet01/u_menu"  method="post">
+		<input type="hidden" name="value"  value="u_search">
+		<input type="submit" value="企業検索" >
+
 	</form>
+	<form action="/servlet01/u_menu"  method="post">
+		<input type="hidden" name="value"  value="u_co_list">
+		<input type="submit" value="企業一覧" >
+	</form>
+	<a href="/servlet01/u_login?value=u_login">ログアウト</a>
+
 
 	<form action="/servlet01/u_menu" methods="post">
 		<input type="submit" name="value" value="u_co_list">
 		<input type="submit" value="企業一覧">
 	</form>
+
 </body>
 </html>

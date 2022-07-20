@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>利用者ログイン</title>
-<link rel="stylesheet" href="css/u_login_style.css">
+<title>ログイン</title>
+<link rel="stylesheet" href="css/a_login_style.css">
 </head>
 <body>
-	<h1>利用者ログイン</h1>
-	<form action="/servlet01/u_login" method="post">
+	<h1>ログイン</h1>
+	<form action="/servlet01/a_login" method="post">
 		ログインID：<input type="text" name="id"><br>
 		パスワード：<input type="password" name="pass"><br>
 		<input type="submit" value="ログイン">

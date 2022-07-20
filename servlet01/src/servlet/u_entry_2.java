@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DAO.selectDAO;
-
 
 @WebServlet("/u_entry_2")
 public class u_entry_2 extends HttpServlet {
@@ -23,15 +21,17 @@ public class u_entry_2 extends HttpServlet {
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path = null;
+
 		request.setCharacterEncoding("UTF-8");
+
 		String value = request.getParameter("value");
 
-			if( value.equals("u_entry_3")) {
-				selectDAO f = new selectDAO();
-				path = "WEB-INF/jsp/u_entry_3.jsp";
-			}else if( value.equals("u_entry_1")){
-				path = "WEB-INF/jsp/u_entry_1.jsp";
-			}
+		if( value.equals("u_entry_3")) {
+//			selectDAO f = new selectDAO();
+			path = "WEB-INF/jsp/u_entry_3.jsp";
+		}else if( value.equals("u_entry_1")){
+			path = "WEB-INF/jsp/u_entry_1.jsp";
+		}
 
 	RequestDispatcher dispatcher =
 			request.getRequestDispatcher( path );
