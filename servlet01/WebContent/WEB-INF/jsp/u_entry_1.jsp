@@ -29,9 +29,8 @@
 	<a href="/Login/RegisterUser?action=go">登録</a>
 
  	<form action="/servlet01/u_login" method="post">
-=======
+
  	<form action="/servlet01/u_login">
->>>>>>> branch 'master' of https://github.com/Mizuki-Torii/ServletApp.git
 		<input type="hidden" name="u_login">
 		<input type="submit" value="戻る" >
 	</form>

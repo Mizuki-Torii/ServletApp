@@ -17,7 +17,7 @@ public class u_menu extends HttpServlet {
 		RequestDispatcher dispatcher =
 
 				request.getRequestDispatcher( "WEB-INF/jsp/u_menu.jsp");
-				dispatcher.forward( request , response );
+		dispatcher.forward( request , response );
 			}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 				throws ServletException, IOException {
