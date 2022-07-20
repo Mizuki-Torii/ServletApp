@@ -38,6 +38,7 @@
 		<option value="key5">600万以上</option>
 	</select><br>
 	<select name="選考方法" id="update_test">
+
 		<option value="key1">選考方法</option>
 		<option value="key2">論文</option>
 		<option value="key3">Webテスト</option>
@@ -52,12 +53,12 @@
 		<option value="key5">1000人以上</option>
 	</select><br>
 
-	<form action="/servlet01/u_search" method="post">
+	<form action="/servlet01/a_co_list" method="post">
 		<input type="hidden" name="value" value="a_co_list">
 		<input type="submit" value="条件なしで一覧表示">
 	</form>
 
-	<form action="/servlet01/u_search" method="post">
+	<form action="/servlet01/a_co_list" method="post">
 		<input type="hidden" name="value" value="a_co_list">
 		<input type="submit" value="検索">
 	</form><br>
