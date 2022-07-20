@@ -33,8 +33,6 @@ public class u_entry_1 extends HttpServlet {
 
 		request.setCharacterEncoding("UTF-8");
 
-
-
 		String id = request.getParameter("id");
 		String pass = request.getParameter("pass");
 		String name = request.getParameter("name");
@@ -45,8 +43,6 @@ public class u_entry_1 extends HttpServlet {
 		Account account = new Account( id , pass, name, mail, age, tel );
 		session.setAttribute("LoginUser", account);
 
-//			selectDAO f = new selectDAO();
-//			Account account1 = f.find( value );
 
 	RequestDispatcher dispatcher =
 			request.getRequestDispatcher( "WEB-INF/jsp/u_entry_2.jsp" );
